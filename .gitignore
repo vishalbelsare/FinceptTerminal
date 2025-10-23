@@ -11,9 +11,19 @@ build.txt
 cmder
 reqgen.py
 fincept_env
-python
+*.md
+*.db
+# Allow specific markdown files
+!README.md
+!docs/**/*.md
+!.github/**/*.md
+# Allow embedded Python in resources
+!fincept-terminal-desktop/src-tauri/resources/python/
 treeview.py
 testing
+fincept-terminal-desktop/.vscode
+fincept-terminal-desktop/.claude
+fincept-terminal-desktop/CLAUDE.md
 fincept_terminal/fyers_session_config.json
 fincept_terminal/backup_20250730_072611
 .pdm-build
@@ -31,6 +41,10 @@ fincept_terminal/settings.json
 fincept_terminal/watchlist_settings.json
 upx.exe
 fincept_icon.ico
+legacy-python-depreciated/python
+python
+!fincept-terminal-desktop/src-tauri/resources/python/**
+fincept-terminal-desktop/node_modules
 setup.iss
 upx.exe"build/"
 .env
@@ -39,3 +53,5 @@ temp
 tempdist
 settings.json
 watchlist_settings.json
+.DS_Storenul 
+**/.claude/
